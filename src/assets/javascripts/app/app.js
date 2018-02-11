@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('registrarApp', ['ngResource', 'ui.router'])
+angular.module('registrarApp', ['ngResource', 'ui.router', 'checklist-model'])
 
     .run(function ($rootScope, $location, $http, $state) {
         $rootScope.$on('$stateChangeStart', function (event, toState, toStateParams) {
